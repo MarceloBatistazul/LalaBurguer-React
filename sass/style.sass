@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@100..900&display=swap')
+
+* 
+    padding: 0
+    margin: 0
+    text-decoration: none
+    box-sizing: border-box
+    list-style: none
+    font-family: 'Nunito Sans', sans-serif
+
+:root
+    --main-color: #d63a25
+    --second-color: #f4f4f4
+    --third-color: #333
+    --fourth-color: #fff
+    --fifth-color: #000
+
+body
+    color: var(--fifth-color)
+    background: var(--fourth-color)
+
+/* ---------- NAVEGAÇÃO ---------- */
+.navegador
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 18px 10%
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
+    background: var(--fourth-color)
+
+.logo
+    display: flex
+    align-items: center
+    gap: 10px
+    font-size: 1.2rem
+    font-weight: bold
+    color: var(--fifth-color)
+
+    img
+        height: 35px
+
+.navegador ul
+    display: flex
+    align-items: center
+    gap: 3rem
+
+    li a
+        color: var(--fifth-color)
+        font-size: 17px
+        font-weight: 500
+        transition: all 0.3s
+
+        &:hover
+            color: var(--main-color)
+
+.menu
+    cursor: pointer
+    display: none
+
+    .bar
+        display: block
+        width: 28px
+        height: 3px
+        border-radius: 3px
+        background: var(--fifth-color)
+        margin: 5px auto
+        transition: all 0.6s
+
+        &:nth-child(1),
+        &:nth-child(3)
+            background: var(--main-color)
+
+/* ---------- SEÇÃO HOME ---------- */
+.home
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 100px 10%
+
+    &-txt
+        max-width: 40rem
+
+        .text-h4
+            font-size: 1.5rem
+            color: var(--main-color)
+            margin-bottom: 1rem
+
+        .text-h1
+            font-size: 3.5rem
+            margin-bottom: 1rem
+            line-height: 1.2
+
+        p
+            margin-bottom: 2rem
+            font-size: 1.2rem
+
+    &-btn
+        padding: 15px 40px
+        background: var(--main-color)
+        color: var(--fourth-color)
+        border-radius: 8px
+        font-weight: bold
+        transition: all 0.3s
+        display: inline-block
+
+        &:hover
+            background: #b82d1a
+
+    &-img img
+        max-width: 100%
+        height: auto
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 785px)
+    .navegador ul
+        display: none
+        flex-direction: column
+        position: fixed
+        top: 70px
+        right: 0
+        width: 100%
+        height: 100vh
+        background: var(--fourth-color)
+        transition: 0.3s
+        padding-top: 20px
+        align-items: center
+
+        &.active
+            display: flex
+
+    .menu
+        display: block
+
+        &.active
+            .bar:nth-child(1)
+                transform: translateY(8px) rotate(45deg)
+
+            .bar:nth-child(2)
+                opacity: 0
+
+            .bar:nth-child(3)
+                transform: translateY(-8px) rotate(-45deg)
+
+    .home
+        flex-direction: column
+        text-align: center
+        gap: 4rem
+        padding: 100px 5%
+
+        .text-h1
+            font-size: 2.5rem
+
+        &-txt p
+            font-size: 1rem
+
+/* ---------- FOOTER ---------- */
+.footer
+    background: var(--third-color)
+    color: var(--fourth-color)
+    padding: 20px
+    text-align: center
+
+    &-container
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 20px
+
+    &-logo h2
+        font-size: 1.8rem
+        color: var(--main-color)
+
+    &-links
+        display: flex
+        gap: 15px
+        flex-wrap: wrap
+        justify-content: center
+
+        a
+            color: var(--fourth-color)
+            text-decoration: none
+            font-weight: 500
+            transition: 0.3s
+
+            &:hover
+                color: var(--main-color)
+
+    &-social
+        display: flex
+        gap: 15px
+
+        a
+            color: var(--fourth-color)
+            font-size: 1.5rem
+            transition: 0.3s
+
+            &:hover
+                color: var(--main-color)
+
+    &-copy
+        font-size: 0.9rem
+        opacity: 0.8
+
+/* Responsividade Footer */
+@media (max-width: 600px)
+    .footer-links
+        flex-direction: column
+        gap: 10px
+
