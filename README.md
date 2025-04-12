@@ -1,47 +1,67 @@
 # 🍔 Lala's Burger Lounge
 
-Um projeto desenvolvido com **React + TypeScript** que simula a página inicial de uma hamburgueria fictícia. Design moderno, responsivo e feito com muito carinho para fins de aprendizado e portfólio.
+Um site fictício de hamburgueria feito com **React + Vite + Sass**, projetado para ser moderno, responsivo e com foco em uma experiência visual agradável. 🚀
 
-## 🚀 Tecnologias Utilizadas
+## 📸 Preview
 
-- React
-- TypeScript
-- Vite
-- Sass (SCSS)
-- HTML5 + CSS3
+![preview](./public/img/imagem.png) <!-- Altere o caminho se quiser mostrar outra imagem -->
+![alt text](image-1.png)
 
-## 📁 Estrutura de Pastas
 
-LalaBurguer-React/ ├── public/ ├── src/ │ ├── assets/ │ ├── components/ │ ├── pages/ │ ├── styles/ │ └── main.tsx ├── index.html └── README.md
+## 📁 Tecnologias Utilizadas
 
-bash
-Copiar
-Editar
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Sass (SCSS)](https://sass-lang.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Boxicons](https://boxicons.com/) para ícones
 
-## 🖥️ Como rodar o projeto localmente
+## 🧪 Como rodar o projeto
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/MarceloBatistazul/LalaBurguer-React.git
+   ```
+
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
+
+3. **Rode o projeto**
+   ```bash
+   npm run dev
+   ```
+
+A aplicação estará disponível em `http://localhost:5173`
+
+## 🌐 Deploy
+
+Em breve disponível via [GitHub Pages](https://pages.github.com) ou [Vercel](https://vercel.com/)
+
+## ✨ Funcionalidades
+
+- Layout responsivo
+- Menu de navegação estilizado
+- Seção de destaque com chamada para reserva
+- Rodapé com redes sociais
+- Tema de cores personalizável via variáveis
+
+## 📌 Estrutura de Pastas
 
 ```bash
-# Clone o repositório
-git clone https://github.com/MarceloBatistazul/LalaBurguer-React.git
+├── public/
+│   └── img/
+├── src/
+│   ├── components/
+│   ├── styles/
+│   └── main.tsx
+├── index.html
+└── README.md
+```
 
-# Acesse a pasta do projeto
-cd LalaBurguer-React
+---
 
-# Instale as dependências
-npm install
+## 🙋‍♂️ Autor
 
-# Inicie o projeto
-npm run dev
-Abra no navegador: http://localhost:5173
-
-📷 Captura de Tela
-(Adicione aqui um print do projeto se quiser)
-
-📌 Observações
-Esse projeto está em desenvolvimento e serve como exercício prático para fixar conhecimentos de front-end com React.
-
-Feito com 💛 por Marcelo Batista
-
-perl
-Copiar
-Editar
+[Marcelo Batista](https://github.com/MarceloBatistazul)
