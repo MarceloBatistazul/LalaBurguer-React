@@ -2,12 +2,6 @@
 
 Um site fictício de hamburgueria feito com **React + Vite + Sass**, projetado para ser moderno, responsivo e com foco em uma experiência visual agradável. 🚀
 
-## 📸 Preview
-
-![preview](./public/img/imagem.png) <!-- Altere o caminho se quiser mostrar outra imagem -->
-![alt text](image-1.png)
-
-
 ## 📁 Tecnologias Utilizadas
 
 - [React](https://reactjs.org/)
